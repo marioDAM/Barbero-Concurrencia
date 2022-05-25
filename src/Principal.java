@@ -7,7 +7,7 @@ public class Principal {
         Barberia barberia = new Barberia();
         Barbero barbero = new Barbero(barberia);
         for (int i = 0; i < 20; i++) {
-            Cliente cliente = new Cliente("Javier" + i, barberia);
+            Cliente cliente = new Cliente("Cliente " + i, barberia);
             cliente.start();
         }
         barbero.start();
